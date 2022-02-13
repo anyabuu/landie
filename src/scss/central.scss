@@ -1,5 +1,13 @@
 .central {
     margin-bottom: 163px;
+
+    @include media-tablet {
+        margin-bottom: 90px;
+    }
+
+    @include media-phone {
+        margin-bottom: 40px;
+    }
 }
 
 .central__content {
