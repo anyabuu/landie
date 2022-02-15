@@ -1,0 +1,139 @@
+.hero {
+    min-height: 100vh;
+    background-image: url("../img/hero-back.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: right;
+
+    @include media-tablet {
+        min-height: auto;
+    }
+
+    @include media-phone {
+        background-image: none;
+    }
+}
+
+.header {
+    padding-top: 18px;
+    margin-bottom: 250px;
+
+    @include media-tablet {
+        margin-bottom: 100px;
+    }
+
+    @include media-phone {
+        margin-bottom: 50px;
+    }
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media-phone {
+        flex-wrap: wrap;
+        column-gap: 25px;
+        row-gap: 10px;
+    }
+}
+
+.header__list{
+    display: flex;
+    gap: 60px;
+
+    @include media-phone {
+        gap: 17px;
+    }
+}
+
+.header__list {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.header__logo-title {
+    font-size: 2.6rem;
+    font-weight: 900;
+    line-height: 1.4;
+    color: var(--color-logo);
+}
+
+.header__button-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    width: 160px;
+    display: inline-block;
+    border-radius: 2px;
+    text-align: center;
+    padding: 4px 0px;  
+    background: var(--color-button);
+    color: white;
+
+    @include media-phone {
+       width: 100px;
+    }
+}
+
+.hero-content {
+    width: 540px;
+
+    @include media-phone {
+        width: auto;
+    }
+}
+
+.hero__title {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 1.32;
+    color: var(--color-main-title);
+    padding-bottom: 20px;
+
+    @include media-phone {
+        font-size: 4rem;
+    }
+}
+
+.hero__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+    padding-bottom: 15px;
+}
+
+.hero__buttons {
+    padding-top: 54px;
+    display: flex;
+    gap: 30px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+    padding-bottom: 15px;
+    color: var(--color-button);
+
+    :nth-child(1) {
+        background: var(--color-button);
+        color: white;
+    }
+
+    @include media-tablet {
+        padding-top: 30px;
+    }
+
+    @include media-phone {
+        padding-top: 10px;
+    }
+}
+
+.hero__link {
+    width: 189px;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 2px;
+    text-align: center;
+    padding: 5px 0px;  
+}
