@@ -55,10 +55,7 @@
 }
 
 .header__logo-title {
-    font-size: 2.6rem;
-    font-weight: 900;
-    line-height: 1.4;
-    color: var(--color-logo);
+   @include logo;
 }
 
 .header__button-link {
