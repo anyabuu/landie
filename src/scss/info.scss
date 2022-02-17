@@ -5,6 +5,11 @@
     @include media-tablet {
         margin-top: 65px;
     }
+
+    @include media-phone {
+        margin-top: 23px;
+        margin-bottom: 61px;
+    }
 }
 
 .info__container{
@@ -15,6 +20,12 @@
     @include media-phone {
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+.info__content {
+    @include media-phone {
+        order: 1;
     }
 }
 
@@ -69,6 +80,7 @@
 
     @include media-phone {
         width: 70%;
+        order: 0;
     }
 }
 
